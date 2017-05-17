@@ -1,0 +1,168 @@
+﻿/* 
+Theme Name: Conecta - Cyanotype Child
+Theme URI: http://conecta.usjt.br
+Description: Based on Cyanotype is a monochromatic blog theme with a bold, yet simple look that sets your blog apart from the rest. Pick your favorite background color or image to lend your personal flair.
+Author: Automattic and Andre Rosa
+Template: cyanotype
+Version: 0.1.0
+*/
+
+@import url("fonts/fonts.css");
+
+/* Basics */
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	border: none;
+	background-color: #fff;
+	color: #333;
+}
+
+.site-title img {
+	max-width: 350px;
+}
+
+.conecta-logo a {
+	text-decoration: none;
+	text-shadow: none;
+	border: none;
+}
+
+.conecta-description {
+	display: inline;
+	text-transform: lowercase;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	margin: 0;
+	color: #003366;
+}
+
+.conecta-autor {
+	font-family: Inconsolata, monospace;
+	font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #003366;
+}
+
+.conecta-intertitulo {
+	font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #003366;
+}
+
+.site .skip-link {
+	text-shadow: none;
+}
+
+.site-header {
+	border-bottom: none;
+}
+
+.site-header .nav-menu a:hover,
+.site-header .nav-menu a:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	background: #333;
+	border-color: #333;
+	color: #fff;
+}
+
+.site-info {
+	font-size: 70%;
+	text-align: center;
+}
+
+.footer-cc {
+	max-width: 20px;
+}
+
+/* Links */
+
+a,
+a:visited,
+a:active,
+.entry-content a,
+.entry-footer .author-bio a,
+.page-content a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a,
+.aboutme_widget a,
+.widget_gravatar a,
+.widget-grofile a {
+	background: none;
+	color: #003366;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+a img {
+	border: 0;
+	text-shadow: none;
+}
+
+a:hover,
+a:focus,
+.site-title a,
+.site-title a:hover,
+.site-title a:focus,
+.image-navigation a:hover,
+.comment-navigation a:hover,
+.post-navigation a:hover .post-title,
+.entry-date a:hover,
+.entry-footer a:hover,
+.site-title a:hover,
+.entry-title a:hover,
+.comment-author a:hover,
+.comment-metadata a:hover,
+.pingback .edit-link a:hover,
+.site-info a:hover,
+.entry-title a:hover
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-footer .author-bio a:hover,
+.entry-footer .author-bio a:focus,
+.page-content a:hover,
+.page-content a:focus,
+.taxonomy-description a:hover,
+.taxonomy-description a:focus,
+.logged-in-as a:hover,
+.logged-in-as a:focus,
+.comment-content a:hover,
+.comment-content a:focus,
+.pingback .comment-body > a:hover,
+.pingback .comment-body > a:focus,
+.textwidget a:hover,
+.textwidget a:focus,
+.aboutme_widget a:hover,
+.aboutme_widget a:focus,
+.widget_gravatar a:hover,
+.widget_gravatar a:focus,
+.widget-grofile a:hover,
+.widget-grofile a:focus,
+.page-links a,
+.entry-content .mejs-horizontal-volume-slider,
+.entry-content .wp-playlist-caption,
+#infinite-footer .blog-credits a:hover {
+	background: none;
+	color: #ccc;
+	text-decoration: none;
+	text-shadow: none;
+}
