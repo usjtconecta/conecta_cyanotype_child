@@ -19,7 +19,8 @@ body {
 }
 
 .site-title img {
-	max-width: 350px;
+    max-height: 80px;
+    max-width: 100%;
 }
 
 .conecta-logo a {
@@ -38,6 +39,10 @@ body {
 	color: #003366;
 }
 
+.menu-redes-sociais-container {
+	padding-right: 50px;
+}
+
 .conecta-autor {
 	font-family: Inconsolata, monospace;
 	font-size: 20px;
@@ -54,6 +59,15 @@ body {
     font-weight: bold;
     color: #003366;
 }
+
+.conecta-linhafina {
+	font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #666;
+}
+
 
 .site .skip-link {
 	text-shadow: none;
