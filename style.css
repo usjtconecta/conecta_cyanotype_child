@@ -185,3 +185,7 @@ a:focus,
 	text-decoration: none;
 	text-shadow: none;
 }
+
+.entry-content a {
+	font-weight: bold;
+}
