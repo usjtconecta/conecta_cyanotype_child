@@ -94,3 +94,47 @@ if ( ! function_exists( 'get_time_string' ) ) {
    }
  }
 }
+
+//Adds the "nofollow" rel attribute to "read more" link
+add_filter('the_content_more_link','add_nofollow_to_link', 0); 
+function add_nofollow_to_link($link) { return str_replace('<a', '<a rel="nofollow"', $link); } 
+//nofollow tag_cloud
+add_filter('wp_tag_cloud', 'cis_nofollow_tag_cloud');
+function cis_nofollow_tag_cloud($text) {
+    return str_replace('<a href=', '<a rel="nofollow" href=',$text); 
+}
+
+//nofollow posts tags
+add_filter('the_tags', 'cis_nofollow_the_tag');
+function cis_nofollow_the_tag($text) {
+    return str_replace('rel="tag"', 'rel="tag nofollow"', $text);
+}
+//nofollow archive links
+add_filter( 'get_archives_link', 'nofollow_archive' );
+function nofollow_archive( $text ) {
+	$text = stripslashes($text);
+	$text = preg_replace_callback('|<a (.+?)>|i','wp_rel_nofollow_callback', $text);
+	return $text;
+}
+ 
+//nofollow categories
+add_filter( 'wp_list_categories', 'cis_nofollow_wp_list_categories' );
+function cis_nofollow_wp_list_categories( $text ) {
+$text = stripslashes($text);
+$text = preg_replace_callback('|<a (.+?)>|i','wp_rel_nofollow_callback', $text);
+return $text;
+}
+
+//nofollow post category
+add_filter( 'the_category', 'cis_nofollow_the_category' );
+function cis_nofollow_the_category( $text ) {
+$text = str_replace('rel="category tag"', "", $text);
+$text = cis_nofollow_wp_list_categories($text);
+return $text;
+}
+
+//nofollow post author link
+add_filter('the_author_posts_link', 'cis_nofollow_the_author_posts_link');
+function cis_nofollow_the_author_posts_link ($link) {
+return str_replace('</a><a href=', '<a rel="nofollow" href=',$link); 
+}
