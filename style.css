@@ -108,6 +108,7 @@ input[type="submit"]:active {
 .footer-usjt {
     max-width: 220px;
 	padding-top: 50px;
+	margin: 0 auto;
 }
 
 /* Links */
