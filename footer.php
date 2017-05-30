@@ -16,7 +16,7 @@
 		<a href="http://www.usjt.br" target="_blank"><img class="footer-usjt" src="<?php echo get_stylesheet_directory_uri(); ?>/img/usjt_logo.png" alt="Universidade São Judas Tadeu"></a><br />
 		<?php print date('Y'); ?> <a href="http://usjt.br/" target="_blank">Universidade São Judas Tadeu</a><br />
 		<img class="footer-cc" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_cc.png" align="absmiddle" alt="Creative Commons" /> Conteúdo licenciado sob <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons by-nc</a><br />
-		Agência Conecta usa <a href="http://wordpress.org" target="_blank">Wordpress</a> - tema <a href="https://wordpress.com/themes/" rel="designer" target="_blank">Cyanotype</a>
+		<a href="http://conecta.usjt.br" rel="author">Agência Conecta</a> usa <a href="http://wordpress.org" target="_blank">Wordpress</a> - tema <a href="https://wordpress.com/themes/" rel="designer" target="_blank">Cyanotype</a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
