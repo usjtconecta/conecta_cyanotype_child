@@ -18,6 +18,10 @@ body {
 	color: #333;
 }
 
+b, strong {
+	font-weight: 900;
+}
+
 .site-title img {
     max-height: 80px;
     max-width: 100%;
@@ -110,6 +114,10 @@ input[type="submit"]:active {
 	padding-top: 50px;
 }
 
+
+.entry-footer {
+    border-top: none;
+}
 
 /* Links */
 
