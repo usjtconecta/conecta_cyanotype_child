@@ -105,6 +105,23 @@ input[type="submit"]:active {
 	text-align: center;
 }
 
+@media screen and (min-width: 51.755em) {
+	.post-navigation:after {
+		width: 0px;
+	}
+}
+
+.conecta-banner {
+	max-width: 80%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.conecta-banner img {
+	border: none;
+	max-width: 100%;
+}
+
 .footer-cc {
 	max-width: 20px;
 }

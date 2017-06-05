@@ -1,5 +1,18 @@
 <?php
 
+// Conecta Banner
+
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+	'name' => __( 'Banner Conecta', 'conecta_banner' ),
+	'id' => 'conecta_banner',
+	'before_widget' => '<div class="conecta-banner">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
+
 // Remove WP Version
 
 function wpb_remove_version() {

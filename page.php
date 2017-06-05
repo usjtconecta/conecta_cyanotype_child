@@ -26,6 +26,10 @@ get_header(); ?>
 		?>
 
 		</main><!-- .site-main -->
+
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("conecta_banner") ) : ?>
+<?php endif;?>
+
 	</div><!-- .content-area -->
 
 <?php get_footer(); ?>
