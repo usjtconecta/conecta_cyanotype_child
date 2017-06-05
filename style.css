@@ -114,6 +114,7 @@ input[type="submit"]:active {
 .conecta-banner {
 	max-width: 80%;
 	margin: 0px auto;
+	padding-bottom: 40px;
 	text-align: center;
 }
 
